@@ -7,11 +7,6 @@
 	  "template"
 	],
 	"description": "My base template for Create React App.",
-	"repository": {
-	  "type": "git",
-	  "url": "https://github.com/Webudvikler-TechCollege/cra-template-example.git",
-	  "directory": "/"
-	},
 	"license": "MIT",
 	"engines": {
 	  "node": ">=14"
