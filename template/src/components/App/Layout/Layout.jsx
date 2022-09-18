@@ -25,7 +25,7 @@ const Layout = props => {
                 {props.title}
             </h1>
             <section>
-                {/* indsætter fremover descendants i tilhørende placering */}
+                {/* indsætter fremover descendants/children i tilhørende placering */}
                 {props.children}
             </section>
         </>
