@@ -1,10 +1,13 @@
 // Routing
 import { Routes, Route } from 'react-router-dom'
 
-// Pages
+// Pages og komponenter
 import { Content } from '../../Pages/Content/Content'
 import { ContentDetails } from '../../Pages/Content/ContentDetails'
 import { ContentList } from '../../Pages/Content/ContentList'
+import { Login } from '../../Pages/Login/Login'
+import { AdminPage } from '../../Pages/Admin/AdminPage'
+import { AdminControl } from '../../Pages/Admin/AdminControl'
 
 // Function Component til styring af pages og pathing
 export const AppRouter = () => {
@@ -19,6 +22,9 @@ export const AppRouter = () => {
                     <Route path='*2' element={<ContentDetails />}></Route>
                 </Route>
             </Route>
+            <Route path='/login' element={<Login />}></Route>
+            <Route path='/admin' element={<AdminPage />}></Route>
+            <Route path="/admin/:comment_id" element={<AdminControl />}></Route>
         </Routes>
     )
 }
